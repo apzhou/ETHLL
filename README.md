@@ -13,17 +13,12 @@ This Visual Studio C++ project consists of 3 files: hyperloglog.hpp, murmur3.h a
 ## Command line arguments
 Command line arguments are:
 
-w: bit width, default value is w=10 and valid values are [4,30]
-
-k: random keys, default value is k=10000, valid values are {500, 1000, 5000, 10000, 50000, 100000, 500000, 1000000}
-
-e: errors, default value is e=1000
-
-r: runs, default value is 1000, it is used to run the test multiple times
-
-t: protect threshold, default value is t=2
-
-f: input keys, when not present the test is run with a set of random keys
+- w: bit width, default value is w=10 and valid values are [4,30]
+- k: random keys, default value is k=10000, valid values are {500, 1000, 5000, 10000, 50000, 100000, 500000, 1000000}
+- e: errors, default value is e=1000
+- r: runs, default value is 1000, it is used to run the test multiple times
+- t: protect threshold, default value is t=2
+- f: input keys, when not present the test is run with a set of random keys
 
 **example: hll.exe w=10 k=100000 e=10000 t=0 r=1000**
 
