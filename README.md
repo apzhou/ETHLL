@@ -3,7 +3,7 @@ Error-Tolerant against soft errors HLL
 
 ## Description
 The Remove Minimum (RM) Scheme exploits the features of the HLL algorithm to provide effective protection against soft errors without
-requiring additional memory. This code is used in the paper "Remove Minimum (RM): An Error-Tolerant Scheme for Cardinality Estimate by HyperLogLog" by Pedro Reviriego, Jorge Martinez, Ori Rottenstreich, Shanshan Liu and Fabrizio Lombardi, that is that is currently under review in IEEE Transactions on Dependable and Secure Computing
+requiring additional memory. This code is used in the paper "Remove Minimum (RM): An Error-Tolerant Scheme for Cardinality Estimate by HyperLogLog" by Pedro Reviriego, Jorge Martinez, Ori Rottenstreich, Shanshan Liu and Fabrizio Lombardi, that is that is currently under review in IEEE Transactions on Dependable and Secure Computing.
 
 The Error-Tolerant HyperLogLog code used Hideaki Ohno's HyperLogLog as a starting point https://github.com/hideo55/cpp-HyperLogLog
 
