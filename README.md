@@ -26,6 +26,8 @@ The example above creates a HLL having 2^10 counters and inserts 100,000 random 
 
 In this example, the test is run 1,000 times and produces 8x2 output files, one for each bit for 2 scenarios, the unprotected HLL and the protected HLL using the RM Scheme. It injects 10,000 errors in all the bits of each HLL of the 1,024 counters. The output file with prefix "hll0_" contains the run, the HLL estimate, the minimum, average and the maximum estimate of the unprotected HLL. The output file with prefix "hll1_" contains the run, the HLL estimate, the minimum, average and the maximum estimate of the protected HLL using the RM Scheme. Fially, the test produces 2 global output files having prefix "hll0_" and "hll1_" and 1 additioal file with prefix "perf_" containing the results of the performance evaluation.
 
+When an input file is given using the f parameter, the test is run with the keys of the input file instead of using random keys. The test hll.exe w=10 f=1000_ips.txt e=10000 r =1000 creates a HLL having 2^10 counters with the keys in the file "1000_ips.txt".
+
 ## License
 
 MIT
