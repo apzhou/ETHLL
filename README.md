@@ -1,5 +1,5 @@
 # Error-Tolerant HLL
-Error-Tolerant against soft errors HLL
+Error-Tolerant against soft errors HLL on the HLL counters.
 
 ## Description
 The Remove Minimum (RM) Scheme exploits the features of the HLL algorithm to provide effective protection against soft errors without
