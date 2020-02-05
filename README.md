@@ -24,9 +24,13 @@ Command line arguments are:
 
 The example above creates a HLL having 2^10 counters and inserts 100,000 random keys. Te test injects 10 errors in all the bit positions of the 1,024 counters, from bit 0 to bit 7. It compares the resulting estimate of the unprotected HLL vs. the protected HLL using the Remove Minimum (RM) Scheme.
 
-In this example, the test is run 1,000 times and produces 8x2 output files, one for each bit for 2 scenarios, the unprotected HLL and the protected HLL using the RM Scheme. It injects 10 errors in all the bits of each HLL of the 1,024 counters. The output file with prefix "hll0_" contains the run, the HLL estimate, the minimum, average and the maximum estimate of the unprotected HLL. The output file with prefix "hll1_" contains the run, the HLL estimate, the minimum, average and the maximum estimate of the protected HLL using the RM Scheme. Fially, the test produces 2 global output files having prefix "hll0_" and "hll1_" and 1 additioal file with prefix "perf_" containing the results of the performance evaluation in terms of execution time.
+In this example, the test is run 1,000 times and produces 16 output files, one for each bit for 2 scenarios, the unprotected HLL and the protected HLL using the RM Scheme. It injects 10 errors in all the bits of each HLL of the 1,024 counters. 
 
-When an input file is given using the f parameter, the test is run with the keys of the input file instead of using random keys. The test hll.exe w=10 f=1000_ips.txt e=10000 r =1000 creates a HLL having 2^10 counters with the keys in the file "1000_ips.txt".
+The test produces the output files "hll0_b0_w10_k100000_e10_t0_r1000.txt" to "hll0_b7_w10_k100000_e10_t0_r1000.txt" for the estimates of bits 0 to 7. These files contain contain the run, the HLL estimate, the minimum, average and the maximum estimate of the unprotected HLL. The output files "hll1_b0_w10_k100000_e10_t0_r1000.txt" to "hll1_b7_w10_k100000_e10_t0_r1000.txt" contain the run, the HLL estimate, the minimum, average and the maximum estimate of the protected HLL using the RM Scheme.
+
+In addition, the test produces 2 global output files, "hll0_w10_k100000_e10_t0_r1000.txt" and "hll1_w10_k100000_e10_t0_r1000.txt" for the unprotected HLL and the protected HLL, respectively. Finaly, the file "perf_w10_k100000_e10_t0_r1000.txt" contains the results of the performance evaluation in terms of execution time.
+
+When an input file is given using the f parameter, the test is run with the keys of the input file instead of using random keys. The test hll.exe w=10 f=1000_ips.txt e=10000 r =1000 creates a HLL having 2^10 counters with the keys in the input file "1000_ips.txt".
 
 ## License
 
