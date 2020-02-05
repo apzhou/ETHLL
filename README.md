@@ -26,7 +26,7 @@ The example above creates a HLL having 2^10 counters and inserts 100,000 random 
 
 In this example, the test is run 1,000 times and produces 16 output files, one for each bit for 2 scenarios, the unprotected HLL and the protected HLL using the RM Scheme. It injects 10 errors in all the bits of each HLL of the 1,024 counters. 
 
-The test produces the output files "hll0_b0_w10_k100000_e10_t0_r1000.txt" to "hll0_b7_w10_k100000_e10_t0_r1000.txt" for the estimates of bits 0 to 7. These files contain contain the run, the HLL estimate, the minimum, average and the maximum estimate of the unprotected HLL. The output files "hll1_b0_w10_k100000_e10_t0_r1000.txt" to "hll1_b7_w10_k100000_e10_t0_r1000.txt" contain the run, the HLL estimate, the minimum, average and the maximum estimate of the protected HLL using the RM Scheme.
+The test produces the output files "hll0_b0_w10_k100000_e10_t0_r1000.txt" to "hll0_b7_w10_k100000_e10_t0_r1000.txt" for the estimates of bits 0 to 7. These files contain contain the run, the HLL estimate, the minimum, average and the maximum estimate of the unprotected HLL. Files "hll1_b0_w10_k100000_e10_t0_r1000.txt" to "hll1_b7_w10_k100000_e10_t0_r1000.txt" contain the run, the HLL estimate, the minimum, average and the maximum estimate of the protected HLL using the RM Scheme.
 
 In addition, the test produces 2 global output files, "hll0_w10_k100000_e10_t0_r1000.txt" and "hll1_w10_k100000_e10_t0_r1000.txt" for the unprotected HLL and the protected HLL, respectively. Finaly, the file "perf_w10_k100000_e10_t0_r1000.txt" contains the results of the performance evaluation in terms of execution time.
 
